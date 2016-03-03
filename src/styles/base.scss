@@ -1,0 +1,84 @@
+@import 'colors';
+@import 'fonts';
+@import 'inputrange';
+
+$fonts: 'Open Sans', sans-serif;
+
+* {
+  box-sizing: border-box;
+  &:focus {
+    outline:none;
+  }
+}
+
+body {
+  font-family: $fonts;
+  font-size: .9em;
+  color: white;
+}
+
+input[type="text"] {
+  background-color: rgba(255, 255, 255, .1);
+  display: block;
+  width: 95%;
+  padding:3% 0 1% 2%;
+  margin: 20px auto;
+  border: none;
+  border-bottom:1px solid white;
+  color: white;
+  font-size: 1em;
+  font-family: $fonts;
+
+  &:focus {
+    border-color: $micro-green;
+  }
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  margin:10px;
+
+  &:hover {
+    cursor:pointer;
+    border-color: $micro-green;
+    color: $micro-green;
+  }
+
+  &.large {
+    padding:.5em 1em;
+  }
+}
+
+.right {
+  float: right;
+}
+
+.large-text {
+  font-size: 1.25em;
+}
+
+.xlarge-text {
+  font-size: 3em;
+  margin:0 0 .4em 0;
+}
+
+.no-border {
+  border:none;
+}
+
+.lnr {
+  font-weight:bold;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-children {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
